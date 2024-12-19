@@ -1,0 +1,39 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Lieu</th>
+            <th>Participants</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for evenement in evenements %}
+        <tr>
+            <td>{{ evenement.id }}</td>
+            <td>{{ evenement.titre }}</td>
+            <td>{{ evenement.description }}</td>
+            <td>{{ evenement.date }}</td>
+            <td>{{ evenement.lieu }}</td>
+            <td>
+                {% if evenement.participants.all %}
+                    <ul>
+                        {% for participant in evenement.participants.all %}
+                            <li>{{ participant.full_name }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    Aucun participant trouvé
+                {% endif %}
+            </td>
+            <td>
+                <button>Modifier</button>
+                <button>Supprimer</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

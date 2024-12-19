@@ -1,0 +1,73 @@
+/* Conteneur principal */
+.create-container {
+  width: 400px; /* Taille du formulaire */
+  margin: 0 auto; /* Centrer le formulaire */
+  padding: 20px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+  text-align: center; /* Centrer le titre et le bouton */
+}
+
+/* Titre */
+.create-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Messages d'erreur */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Champs de formulaire */
+.create-container input[type="text"],
+.create-container input[type="email"],
+.create-container input[type="number"] {
+  width: 100%; /* Champs prennent toute la largeur */
+  padding: 10px;
+  margin-bottom: 15px; /* Espacement entre les champs */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px;
+}
+
+/* Case à cocher et son label */
+.create-container label {
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  gap: 10px; /* Espacement entre la case et le texte */
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px; /* Espacement avec le bouton */
+  cursor: pointer; /* Rendre cliquable */
+}
+
+/* Case à cocher */
+.create-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px; /* Taille personnalisée */
+  cursor: pointer;
+}
+
+/* Bouton */
+.create-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #a90f8d; /* Vert */
+  color: #fff; /* Blanc */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+.create-container button:hover {
+  background-color: #bd25a6; 
+}

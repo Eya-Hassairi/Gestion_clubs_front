@@ -1,0 +1,109 @@
+/* Styles globaux */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .badge.success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .badge.danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .badge.warning {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .evenements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .evenements-table th,
+  .evenements-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .evenements-table th {
+    background-color: #0077ff;
+    color: white;
+  }
+  
+  .evenements-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .evenements-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .link-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #c69ebe;
+    color: white;
+    border: 1px solid #241b22;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #23171f;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 10px;
+  }
+  

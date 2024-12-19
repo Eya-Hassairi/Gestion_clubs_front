@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f7f9fc; /* Fond clair */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #c69ebe; 
+  color: white;
+  border-color: #241b22;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #23171f; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+}
+
+.evenements-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evenements-table th,
+.evenements-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.evenements-table th {
+  background-color: #0077ff; /* Bleu */
+  color: white;
+  font-weight: bold;
+}
+
+.evenements-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.evenements-table tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+.evenements-table td {
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.token-display {
+  white-space: normal; /* Permet le retour à la ligne automatique */
+  word-break: break-all; /* Force les mots très longs (comme un token) à se couper */
+  overflow-wrap: anywhere; /* Coupe les lignes même sans espaces */
+  background-color: #f4f4f4; /* Optionnel : Fond gris clair pour lisibilité */
+  padding: 5px; /* Espacement intérieur pour un affichage propre */
+  border: 1px solid #ddd; /* Optionnel : Bordure légère */
+  border-radius: 4px; /* Coins arrondis */
+  font-family: monospace; /* Police à largeur fixe pour les tokens */
+  font-size: 16px; /* Taille de police ajustée */
+  max-width: 100%; /* Assure que le texte ne dépasse pas */
+}
+/* Conteneur des tokens */
+.admin-token {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Tokens affichés sur plusieurs lignes */
+.token-multiline {
+  word-wrap: break-word; /* Autorise la coupure automatique des mots */
+  word-break: break-word; /* Assure la coupure à l'intérieur des mots */
+  white-space: pre-wrap;  /* Préserve les sauts de ligne */
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+/* Alignement centré des boutons */
+.admin-links, .admin-events {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
